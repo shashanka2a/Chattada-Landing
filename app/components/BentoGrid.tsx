@@ -1,7 +1,6 @@
 'use client'
 
-import Image from 'next/image'
-import { Heart, Users, Fingerprint, Shield, Star, ArrowUpRight, X } from 'lucide-react'
+import { Heart, Users, Fingerprint, Shield, Star, ArrowUpRight, Phone } from 'lucide-react'
 
 interface BentoGridProps {
   isDarkMode: boolean
@@ -23,7 +22,7 @@ export default function BentoGrid({ isDarkMode, t }: BentoGridProps) {
     <section className={`py-20 px-4 md:px-6 transition-colors duration-500 ${isDarkMode ? 'bg-black' : 'bg-[#FAFAFA]'}`}>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        {/* Card 1: Modern Discovery */}
+        {/* Card 1: Modern Discovery (No photos, protected contact) */}
         <div className={`${cardLayout} ${standardCardColors} md:col-span-2 p-10 flex flex-col md:flex-row items-center gap-10`}>
           <div className="flex-1 text-left z-10">
             <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-6 ${isDarkMode ? 'bg-[#2a2a2a] text-[#D4AF37]' : 'bg-[#FFF9E5] text-[#D4AF37]'}`}>
@@ -37,27 +36,26 @@ export default function BentoGrid({ isDarkMode, t }: BentoGridProps) {
           
           <div className="flex-1 w-full max-w-sm relative mt-4 md:mt-0">
             <div className={`relative w-full aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl ${isDarkMode ? 'bg-[#1a1a1a]' : 'bg-white'}`}>
-              <div className="relative w-full h-[75%]">
-                <Image 
-                  src="https://images.unsplash.com/photo-1616002411355-49593fd89721?q=80&w=2574&auto=format&fit=crop" 
-                  alt="Profile" 
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              
-              <div className="absolute top-[55%] left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent pt-12">
-                <p className="text-white font-serif text-2xl">Priya, 24</p>
-                <p className="text-white/80 text-sm">Srivatsa Gothram</p>
+              {/* Abstract profile card with hidden contact instead of photo */}
+              <div className="flex flex-col items-center justify-center h-[75%] gap-4">
+                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ${isDarkMode ? 'bg-[#222]' : 'bg-gray-100'}`}>
+                  <Phone className={isDarkMode ? 'text-[#D4AF37]' : 'text-[#111]'} size={26} />
+                </div>
+                <div className="text-center px-6">
+                  <p className="text-base font-medium text-white/90">
+                    +91 •••• ••{isDarkMode ? '••' : '••'}
+                  </p>
+                  <p className="text-xs text-gray-400 mt-1">
+                    Contact number unlocks only after a verified mutual interest.
+                  </p>
+                </div>
               </div>
 
-              <div className={`h-[25%] flex items-center justify-center gap-4 px-6 ${isDarkMode ? 'bg-[#1a1a1a]' : 'bg-white'}`}>
-                <button className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-500 hover:bg-red-100 transition-colors">
-                  <X size={20} />
-                </button>
-                <button className="flex-1 h-12 rounded-full bg-[#111] text-white font-bold text-sm hover:bg-black transition-colors">
-                  Connect
-                </button>
+              <div className={`h-[25%] flex items-center justify-center gap-4 px-6 ${isDarkMode ? 'bg-[#050505]' : 'bg-gray-50'}`}>
+                <div className="flex flex-col items-start text-xs text-gray-400">
+                  <span className="uppercase tracking-widest">Privacy First</span>
+                  <span className="text-[11px]">No profile photos. Contacts are always protected.</span>
+                </div>
               </div>
             </div>
             

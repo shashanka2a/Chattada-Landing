@@ -13,11 +13,11 @@ export const translations = {
     old_way_title: "The Old Way",
     old_way_1: "Unverified profiles circulating in WhatsApp groups.",
     old_way_2: "Awkward offline bio-data exchanges.",
-    old_way_3: "Zero privacy control over photos.",
+    old_way_3: "Family contact numbers shared openly with no control.",
     new_way_title: "The Sangam Way",
     new_way_1: "100% ID Verified Community Members.",
     new_way_2: "Smart filters for Gothram & Profession.",
-    new_way_3: "Blurred photos until you match.",
+    new_way_3: "Contact numbers stay hidden until a verified mutual match.",
     bento_card1_title: "Modern Discovery",
     bento_card1_desc: "Swipe through profiles with detailed Gothram info. Private, secure, and respectful interface designed for serious intent.",
     bento_card2_title: "Lineage Tree",
@@ -54,11 +54,11 @@ export const translations = {
     old_way_title: "పాత పద్ధతి",
     old_way_1: "వాట్సాప్ గ్రూపుల్లో అపరిచిత ప్రొఫైల్స్.",
     old_way_2: "ఇబ్బందికరమైన బయో-డేటా మార్పిడి.",
-    old_way_3: "ఫోటోలకు ప్రైవసీ రక్షణ లేకపోవడం.",
+    old_way_3: "కుటుంబ ఫోన్ నంబర్లు అందరికీ బహిరంగంగా కనిపించడం.",
     new_way_title: "సంఘం పద్ధతి",
     new_way_1: "100% ID ధృవీకరించబడిన సభ్యులు.",
     new_way_2: "గోత్రం & వృత్తి ఆధారిత స్మార్ట్ ఫిల్టర్లు.",
-    new_way_3: "మ్యాచ్ అయ్యే వరకు ఫోటోలు కనిపించవు.",
+    new_way_3: "రెండు వైపులా అంగీకారం వచ్చిన తర్వాత మాత్రమే ఫోన్ నంబర్ కనిపిస్తుంది.",
     bento_card1_title: "ఆధునిక అన్వేషణ",
     bento_card1_desc: "గోత్ర వివరాలతో ప్రొఫైల్స్‌ను చూడండి. గోప్యత మరియు మర్యాదతో కూడిన ఇంటర్ఫేస్.",
     bento_card2_title: "వంశ వృక్షం",
@@ -82,5 +82,7 @@ export const translations = {
     footer_rights: "© 2025 చాత్తాద సంగమం"
   }
 };
+
+
 
 

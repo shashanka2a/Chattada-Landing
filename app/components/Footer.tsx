@@ -23,3 +23,5 @@ export default function Footer({ isDarkMode, t }: FooterProps) {
 }
 
 
+
+
