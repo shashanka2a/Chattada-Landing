@@ -1,0 +1,17 @@
+{
+  "name": "Chattada Sangam",
+  "short_name": "Sangam",
+  "description": "ID-Verified Matchmaking for Srivaishnava Community",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAFA",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+
